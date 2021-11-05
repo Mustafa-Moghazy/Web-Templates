@@ -1,0 +1,72 @@
+/*** Global ***/
+* {
+    box-sizing: border-box;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.DivContainer {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+p {
+    font-size: 14px;
+} 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*** End Global ***/
+
+header {
+    text-align: center;
+    color: #000;
+    padding: 50px;
+}
+
+nav {
+    display: flex;
+    background-color: #333;
+}
+
+nav a {
+    color: #fff;
+    padding: 12px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titleHeading {
+    flex: 70%;
+    background-color: #eee;
+}
+
+.aboutMe {
+    flex: 30%;
+    background-color: #eee;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ccc;
+}
