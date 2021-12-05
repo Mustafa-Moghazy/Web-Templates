@@ -1,0 +1,55 @@
+/*** Global CSS ***/
+* {
+    box-sizing: border-box;  
+  margin: 0;
+  padding: 0;
+}
+/*** End Global CSS ***/
+.page {
+    display: grid;
+    height: 100vh;
+    background-color: #eee;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: "logo logo logo nav nav nav nav nav nav nav"
+                         "main main main main main main main side side side"
+                         "footer footer footer footer footer footer footer footer footer footer";
+}
+
+ul {
+    list-style-type: none;
+}
+ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+h1{
+    grid-area: logo;
+    background-color:red;
+    color: white;
+}
+
+nav{
+    grid-area: nav;
+    background-color: blue;
+    color: white;
+}
+
+section{
+    grid-area: main;
+    background-color: green;
+    color: white;
+}
+
+aside{
+    grid-area: side;
+    background-color: yellow;
+    color: black;
+}
+
+footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+}
