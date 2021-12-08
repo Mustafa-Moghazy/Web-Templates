@@ -1,0 +1,421 @@
+/*** Start CSS Variables ***/
+:root {
+    --main-color : #10cab7;
+}
+/*** End CSS Variables ***/
+/*** Start Special Components ***/
+.Special-heading {
+    color: #ebeceb;
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -5px;
+    margin: 0;
+}
+.Special-heading + p {
+    color: #777777;
+    font-size: 30px;
+    text-align: center;
+    margin: -30px 0 0 0;
+}
+@media screen and (max-width: 768px) {
+    .Special-heading {
+        font-size: 50px;
+    }
+    .Special-heading + p {
+        font-size: 20px;
+        margin-top: -20px;
+    }
+}
+
+/*** End Special Components ***/
+
+/*** Start Glopal CSS ***/
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Small Screen */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+    .container {
+        width: 920px;
+    }
+}
+
+/* large Screen */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/*** End Glopal CSS ***/
+/*** Start Header ***/
+header {
+    padding: 20px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container .logo {
+    width: 80px;
+}
+header .links {
+    position: relative;
+}
+header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+header .links .icon span {
+    background-color: black;
+    margin-bottom: 5px;
+    height: 3px; 
+}
+header .links .icon span:first-child {
+    width: 100%;
+}
+header .links .icon span:nth-child(2) {
+    width: 70%;
+    transition: 0.3s;
+}
+header .links .icon span:last-child {
+    width: 100%;
+}
+header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    background-color: #f6f6f6;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+
+}
+header .links:hover ul {
+    display: block;
+}
+header .links ul::before {
+    content: "";
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    right: 5px;
+    top: -20px;
+}
+header .links ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header .links ul li a:hover {
+    padding-left: 20px; ;
+}
+header .links ul li:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+/*** End Header  ***/
+/*** Start Landing Section ***/
+.landing {
+    background-image: url(../images/landing.png);
+    background-size: cover;
+    height: calc(100vh - 72px);
+    position: relative;
+}
+.landing .intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+}
+.landing .intro-text h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.landing .intro-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    
+}
+/*** End Landing Section ***/
+/*** Start Features Section ***/
+.features {
+    background-color: #f1f0f0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+.features .feat {
+    padding: 20px;
+    text-align: center;
+}
+.features .feat i {
+    color: var(--main-color);
+}
+.features .feat h3 {
+    font-weight: 800;
+    margin: 20px 0;
+}
+.features .feat p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+/*** End Features Section ***/
+/*** Start Services Section ***/
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.services .container .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+.services .container .services-content .srv {
+    display: flex;
+    margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+    .services .container .services-content .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.services .container .services-content .srv i{
+    color: var(--main-color);
+    flex-basis: 50px;
+}
+.services .container .services-content .srv h3 {
+    margin: 0 0 20px 0;
+}
+.services .container .services-content .srv p {
+    font-weight: 300;
+    line-height: 1.8;
+    color: #444;
+}
+.services .container .services-content .imge {
+    text-align: center;
+    position: relative;
+}
+.services .container .services-content .imge img {
+    width: 260px;
+}
+.services .container .services-content .imge::before {
+    content: "";
+    background-color: var(--main-color);
+    width: 100px;
+    height: calc(100% + 100px);
+    top: -50px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+@media screen and (max-width: 768px) {
+    .services .container .services-content .imge {
+        display: none;
+    }
+}
+/*** End Services Section ***/
+/*** Start Portfolio Section ***/
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f6f6f6;
+}
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 100px;
+}
+.portfolio .portfolio-content .card {
+   background-color: white;
+}
+.portfolio .portfolio-content .card img {
+    max-width: 100%;
+}
+.portfolio .portfolio-content .card .info {
+    padding: 20px;
+}
+.portfolio .portfolio-content .card .info h3 {
+    margin: 0;
+    font-weight: 800;
+}
+.portfolio .portfolio-content .card .info p {
+    font-weight: 300;
+    line-height: 1.8;
+    color: #444;
+}
+@media screen and (max-width: 768px) {
+    .portfolio .portfolio-content .card .info {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/*** End Portfolio Section ***/
+/*** Start About Section ***/
+.about {
+    padding-top: 50px;
+    padding-bottom: calc(50px + 50px);
+}
+.about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.about .about-content .image {
+    position: relative;
+    width: 250px;
+    height: 375px;
+}
+.about .about-content .image img {
+    max-width: 100%;
+}
+.about .about-content .image::before {
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    width: 100px;
+    height: calc(100% + 100px);
+    top: -50px;
+    z-index: -1;
+    left: -20px;
+}
+.about .about-content .image::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 300px;
+    border-left: 80px solid var(--main-color);
+    border-bottom: 80px solid var(--main-color) ;
+    right: -150px;
+    top: -50px;
+    z-index: -1;
+}
+.about .about-content .text {
+    flex-basis: calc(100% - 500px);
+}
+.about .about-content .text p:first-of-type {
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+.about .about-content .text hr{
+    width: 100%;
+    display: inline-block;
+    border-color: var(--main-color);
+}
+.about .about-content .text p:last-of-type {
+    line-height: 2;
+    color: #444;
+}
+@media screen and (max-width: 768px) {
+    .about .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .about-content .image::after,
+    .about .about-content .image::before {
+        display: none;
+    }
+     .about .about-content .image {
+        margin: 0 auto 50px auto;   
+    }
+}
+/*** End About Section ***/
+/*** Start Contact Section ***/
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f6f6f6;
+}
+.contact .info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.contact .info .lapel {
+    font-weight: 800;
+    font-size: 30px;
+    color: #024242;
+    letter-spacing: -2px;
+    margin-bottom: 20px;
+}
+.contact .info .link {
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.contact .info .social i {
+    color: #024242;
+    margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+    .contact .info .link,
+    .contact .info .lapel {
+        font-size: 20px;
+    }
+}
+/*** End Contact Section ***/
+/*** Start Footer Section ***/
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #024242;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+/*** End Footer Section ***/
