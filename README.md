@@ -3,4 +3,4 @@
 ## You Can Have A Look On Projects From Here
 - [Template 1](https://mustafa-moghazy.github.io/Web-Templates/Template%201/)
 - [Template 2](https://mustafa-moghazy.github.io/Web-Templates/Template%202/)
-- [Plog]()
+- [Plog](https://mustafa-moghazy.github.io/Web-Templates/Plog-Practice/)
