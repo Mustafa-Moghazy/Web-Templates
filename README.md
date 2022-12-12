@@ -17,4 +17,4 @@
 
   - [Accordion Component](https://mustafa-moghazy.github.io/Web-Templates/Components/Accordion%20Component/)
 
-  -[Pagination Componnent](https://mustafa-moghazy.github.io/Web-Templates/Components/Pagination%20Componnent/)
+  - [Pagination Componnent](https://mustafa-moghazy.github.io/Web-Templates/Components/Pagination%20Componnent/)
