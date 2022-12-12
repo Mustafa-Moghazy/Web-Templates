@@ -1,0 +1,89 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #343a40;
+  font-size: 24px;
+  height: 100vh;
+  text-align: center;
+  font-weight: bold;
+
+  display: grid;
+  grid-template-columns: 80px 400px 1fr 250px;
+  grid-template-rows: 80px 1fr;
+}
+
+nav,
+section,
+main,
+aside {
+  padding-top: 24px;
+}
+
+nav {
+  background-color: #343a40;
+  color: white;
+  grid-row: 1 / -1; /* from first row to the end*/
+}
+
+menu {
+  background-color: #7048e8;
+  grid-column: 2 / -1; /* from second column to the end*/
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 40px;
+}
+
+button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #5f3dc4;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  padding: 8px 12px;
+}
+
+button:last-child {
+  background-color: #d6336c;
+  margin-left: auto;
+}
+
+section {
+  background-color: #e9ecef;
+  padding: 40px;
+
+  /* How elements that don't fit into container appear */
+  overflow: scroll;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.email {
+  background-color: #adb5bd;
+  height: 96px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  background-color: #e9ecef;
+}
