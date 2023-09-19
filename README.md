@@ -21,5 +21,5 @@
  
 - Fronten-Training Projects
 
-    - [Project one](https://mustafa-moghazy.github.io/Web-Templates/Frontent-training/ProjectOne/).
-    - [Project Two](https://mustafa-moghazy.github.io/Web-Templates/Frontent-training/ProjectTwo/).
+    - [Project one](https://mustafa-moghazy.github.io/Web-Templates/Frontent-training/ProjectOne/)
+    - [Project Two](https://mustafa-moghazy.github.io/Web-Templates/Frontent-training/ProjectTwo/)
