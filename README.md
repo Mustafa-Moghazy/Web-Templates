@@ -18,3 +18,8 @@
   - [Accordion Component](https://mustafa-moghazy.github.io/Web-Templates/Components/Accordion%20Component/)
 
   - [Pagination Componnent](https://mustafa-moghazy.github.io/Web-Templates/Components/Pagination%20Componnent/)
+ 
+- Fronten-Training Projects
+
+    - [Project one](https://mustafa-moghazy.github.io/Web-Templates/Frontent-training/ProjectOne/).
+    - [Project Two](https://mustafa-moghazy.github.io/Web-Templates/Frontent-training/ProjectTwo/).
